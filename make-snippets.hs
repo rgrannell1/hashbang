@@ -1,5 +1,6 @@
 
 import System.IO
+import Control.Monad
 
 
 
@@ -40,17 +41,21 @@ bang :: String -> String
 bang path =
 	"#! " ++ path ++ " ${1}"
 
+unspread2 :: (a -> a -> c) -> ([a] -> c)
+unspread2 f xs = f (xs !! 0) (xs !! 1)
 
 
 
 
+snippetData = [
+	["Ruby",    (bang "/usr/bin/env Ruby")],
+	["Rscript", (bang "/usr/bin/env Rscript")] ]
 
-languages = [
-	makeSnippet "Ruby"    (bang "/usr/bin/ruby Ruby"),
-	makeSnippet "Rscript" (bang "/usr/bin/env Rscript")]
+filenames   = map fn snippetData
+	where fn x = (x !! 0) ++ ".sublime-snippet"
 
+snippets    = map (unspread2 makeSnippet) snippetData
 
+main = do
+	zipWithM_ writeFile filenames snippets
 
-
-
-main = putStrLn (languages !! 0)
