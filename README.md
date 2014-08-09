@@ -1,6 +1,8 @@
 
-HashBang
+HashBang v0.1.0
 ---------------------------------------
+
+HashBang adds hashbang snippets to SublimeText 2/3.
 
 <img src="example.png">
 
