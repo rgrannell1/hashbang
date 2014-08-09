@@ -3,7 +3,7 @@ import System.IO
 import Control.Monad
 
 
-
+-- generate XML tags.
 
 cdata :: String -> String
 cdata content =
@@ -39,7 +39,7 @@ bangEnv lang =
 
 
 
-
+-- generate snippets for tags of the form /usr/bin/env lang/
 
 envSnippets = [
 	["Bash",         "sh"        ],

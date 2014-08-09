@@ -2,6 +2,8 @@
 HashBang
 ---------------------------------------
 
+<img src="example.png">
+
 ### Installation
 
 #### - Linux
@@ -19,7 +21,6 @@ rm -rf hashbang
 
 git clone https://github.com/rgrannell1/hashbang.git
 ```
-
 
 ### Licence
 
