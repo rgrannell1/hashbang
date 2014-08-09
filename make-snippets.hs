@@ -16,6 +16,7 @@ tag name content =
 
 
 
+
 description = tag "description"
 content     = tag "content"
 tabTrigger  = tag "tabTrigger"
@@ -35,10 +36,21 @@ makeSnippet lang command =
 			(content (cdata command))  ++
 			(tabTrigger "#!")
 
+bang :: String -> String
+bang path =
+	"#! " ++ path ++ " ${1}"
 
 
 
 
-myd = makeSnippet "bash" "#!/bin/sh"
 
-main = putStrLn myd
+
+languages = [
+	makeSnippet "Ruby"    (bang "/usr/bin/ruby Ruby"),
+	makeSnippet "Rscript" (bang "/usr/bin/env Rscript")]
+
+
+
+
+
+main = putStrLn (languages !! 0)
