@@ -49,13 +49,18 @@ unspread2 f xs = f (xs !! 0) (xs !! 1)
 
 snippetData = [
 	["Ruby",    (bang "/usr/bin/env Ruby")],
-	["Rscript", (bang "/usr/bin/env Rscript")] ]
+	["Rscript", (bang "/usr/bin/env Rscript")],
+	["Node",    (bang "/usr/bin/env node")] ]
 
 filenames   = map fn snippetData
 	where fn x = (x !! 0) ++ ".sublime-snippet"
 
 snippets    = map (unspread2 makeSnippet) snippetData
 
+
+
+
+
+
 main = do
 	zipWithM_ writeFile filenames snippets
-

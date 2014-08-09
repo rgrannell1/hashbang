@@ -4,6 +4,24 @@ HashBang
 
 ### Installation
 
+#### - Linux
+
+
+```bash
+cd ~/.config/sublime-text-3/Packages
+git clone https://github.com/rgrannell1/hashbang.git
+```
+
+To upgrade, run
+
+```bash
+cd ~/.config/sublime-text-3/Packages
+rm -rf hashbang
+
+git clone https://github.com/rgrannell1/hashbang.git
+```
+
+
 ### Licence
 
 The MIT License
