@@ -6,7 +6,6 @@ HashBang
 
 #### - Linux
 
-
 ```bash
 cd ~/.config/sublime-text-3/Packages
 git clone https://github.com/rgrannell1/hashbang.git

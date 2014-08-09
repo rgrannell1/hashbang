@@ -1,0 +1,4 @@
+<snippet><description>Shebang: CoffeeScript</description>
+<content><![CDATA[#! /usr/bin/env coffee ${1}]]></content>
+<tabTrigger>#!</tabTrigger>
+</snippet>

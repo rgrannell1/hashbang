@@ -1,0 +1,4 @@
+<snippet><description>Shebang: Perl</description>
+<content><![CDATA[#! /usr/bin/env perl ${1}]]></content>
+<tabTrigger>#!</tabTrigger>
+</snippet>

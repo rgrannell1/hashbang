@@ -18,44 +18,58 @@ tag name content =
 
 
 
-description = tag "description"
-content     = tag "content"
-tabTrigger  = tag "tabTrigger"
-snippet     = tag "snippet"
-
-
-
-
 -- build up XML with the above functions,
 -- given a language and shebang line.
 
 makeSnippet :: String -> String -> String
 makeSnippet lang command =
-	snippet body
+	tag "snippet" body
 		where body =
-			(description ("Shebang: " ++ lang)) ++
-			(content (cdata command))  ++
-			(tabTrigger "#!")
-
-bang :: String -> String
-bang path =
-	"#! " ++ path ++ " ${1}"
-
-unspread2 :: (a -> a -> c) -> ([a] -> c)
-unspread2 f xs = f (xs !! 0) (xs !! 1)
+			(tag "description" ("Shebang: " ++ lang)) ++
+			(tag "content" (cdata command))  ++
+			(tag "tabTrigger" "#!")
 
 
 
 
-snippetData = [
-	["Ruby",    (bang "/usr/bin/env Ruby")],
-	["Rscript", (bang "/usr/bin/env Rscript")],
-	["Node",    (bang "/usr/bin/env node")] ]
 
-filenames   = map fn snippetData
-	where fn x = (x !! 0) ++ ".sublime-snippet"
+bangEnv :: String -> String
+bangEnv lang =
+	"#! /usr/bin/env " ++ lang ++ " ${1}"
 
-snippets    = map (unspread2 makeSnippet) snippetData
+
+
+
+
+envSnippets = [
+	["Bash",         "sh"        ],
+	["CoffeeScript", "coffee"    ],
+
+	["Erlang",       "escript"   ],
+	["Haskell",      "runhaskell"],
+
+	["Lua" ,         "lua"       ],
+	["Node",         "node"      ],
+
+	["Perl",         "perl"      ],
+	["Python",       "python"    ],
+	["Python3",      "python3"   ],
+
+	["Ruby",         "ruby"      ],
+	["Rscript",      "Rscript"   ],
+
+	["Scala",        "scala"     ] ]
+
+
+
+
+
+
+envLangs  = map (!! 0) envSnippets
+envPaths  = map (bangEnv . (!! 1)) envSnippets
+
+filenames = map (++ ".sublime-snippet") envLangs
+snippets  = zipWith makeSnippet envLangs envPaths
 
 
 

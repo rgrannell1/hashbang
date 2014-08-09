@@ -1,0 +1,4 @@
+<snippet><description>Shebang: Haskell</description>
+<content><![CDATA[#! /usr/bin/env runhaskell ${1}]]></content>
+<tabTrigger>#!</tabTrigger>
+</snippet>

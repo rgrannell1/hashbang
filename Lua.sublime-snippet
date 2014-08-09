@@ -1,0 +1,4 @@
+<snippet><description>Shebang: Lua</description>
+<content><![CDATA[#! /usr/bin/env lua ${1}]]></content>
+<tabTrigger>#!</tabTrigger>
+</snippet>
