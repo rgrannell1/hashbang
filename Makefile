@@ -1,2 +1,2 @@
 all:
-	ghc -o make-snippets make-snippets.hs
+	ghc -o make-snippets make-snippets.hs && ./make-snippets
