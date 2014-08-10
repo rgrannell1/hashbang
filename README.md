@@ -1,10 +1,27 @@
 
-HashBang v0.2.0
+HashBang v0.2.1
 ---------------------------------------
 
 HashBang adds hashbang snippets to SublimeText 2/3.
 
 <img src="example.png">
+
+### Supported Languages
+
+* Bash
+* CoffeeScript
+* Erlang
+* Haskell
+* Lua
+* Node
+* Perl
+* Python
+* Python3
+* Ruby
+* R
+* Scala
+
+Please send a pull request if you would like to add more languages.
 
 ### Installation
 
