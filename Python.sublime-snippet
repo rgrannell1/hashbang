@@ -1,4 +1,4 @@
 <snippet><description>Shebang: Python</description>
 <content><![CDATA[#! /usr/bin/env python ${1}]]></content>
-<tabTrigger>#!python</tabTrigger>
+<tabTrigger>#!</tabTrigger>
 </snippet>

@@ -1,4 +1,4 @@
 <snippet><description>Shebang: Node</description>
 <content><![CDATA[#! /usr/bin/env node ${1}]]></content>
-<tabTrigger>#!node</tabTrigger>
+<tabTrigger>#!</tabTrigger>
 </snippet>

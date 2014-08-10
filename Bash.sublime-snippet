@@ -1,4 +1,4 @@
 <snippet><description>Shebang: Bash</description>
 <content><![CDATA[#! /usr/bin/env sh ${1}]]></content>
-<tabTrigger>#!bash</tabTrigger>
+<tabTrigger>#!</tabTrigger>
 </snippet>

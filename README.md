@@ -1,5 +1,5 @@
 
-HashBang v0.1.0
+HashBang v0.2.0
 ---------------------------------------
 
 HashBang adds hashbang snippets to SublimeText 2/3.

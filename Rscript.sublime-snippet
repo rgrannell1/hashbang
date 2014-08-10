@@ -1,4 +1,4 @@
 <snippet><description>Shebang: Rscript</description>
 <content><![CDATA[#! /usr/bin/env Rscript ${1}]]></content>
-<tabTrigger>#!rscript</tabTrigger>
+<tabTrigger>#!</tabTrigger>
 </snippet>

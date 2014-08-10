@@ -1,4 +1,4 @@
 <snippet><description>Shebang: Scala</description>
 <content><![CDATA[#! /usr/bin/env scala ${1}]]></content>
-<tabTrigger>#!scala</tabTrigger>
+<tabTrigger>#!</tabTrigger>
 </snippet>
