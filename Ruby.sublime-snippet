@@ -1,4 +1,4 @@
 <snippet><description>Shebang: Ruby</description>
 <content><![CDATA[#! /usr/bin/env ruby ${1}]]></content>
-<tabTrigger>#!</tabTrigger>
+<tabTrigger>#!ruby</tabTrigger>
 </snippet>

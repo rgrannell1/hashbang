@@ -1,6 +1,7 @@
 
 import System.IO
 import Control.Monad
+import Data.Char
 
 
 -- generate XML tags.
@@ -27,7 +28,7 @@ makeSnippet lang command =
 		where body =
 			(tag "description" ("Shebang: " ++ lang)) ++
 			(tag "content" (cdata command))  ++
-			(tag "tabTrigger" "#!")
+			(tag "tabTrigger" ("#!" ++ (map toLower lang)) )
 
 
 
@@ -57,6 +58,7 @@ envSnippets = [
 
 	["Ruby",         "ruby"      ],
 	["Rscript",      "Rscript"   ],
+	["R",            "Rscript"   ],
 
 	["Scala",        "scala"     ] ]
 
