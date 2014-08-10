@@ -1,4 +1,4 @@
 <snippet><description>Shebang: Erlang</description>
-<content><![CDATA[#! /usr/bin/env escript ${1}]]></content>
+<content><![CDATA[#!/usr/bin/env escript ${1}]]></content>
 <tabTrigger>#!</tabTrigger>
 </snippet>

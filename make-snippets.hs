@@ -35,7 +35,7 @@ makeSnippet lang command =
 
 bangEnv :: String -> String
 bangEnv lang =
-	"#! /usr/bin/env " ++ lang ++ " ${1}"
+	"#!/usr/bin/env " ++ lang ++ " ${1}"
 
 
 
