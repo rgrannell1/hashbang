@@ -42,26 +42,25 @@ bangEnv lang =
 -- generate snippets for tags of the form /usr/bin/env lang/
 
 envSnippets = [
-	["Bash",         "sh"        ],
-	["CoffeeScript", "coffee"    ],
+	["Bash",         "sh"         ],
+	["CoffeeScript", "coffee"     ],
 
-	["Erlang",       "escript"   ],
-	["Haskell",      "runhaskell"],
+	["Erlang",       "escript"    ],
+	["Haskell",      "runhaskell" ],
 
-	["Lua" ,         "lua"       ],
-	["Node",         "node"      ],
+	["Lua" ,         "lua"        ],
+	["Ocaml",        "ocamlscript"],
+	["Node",         "node"       ],
 
-	["Perl",         "perl"      ],
-	["Python",       "python"    ],
-	["Python3",      "python3"   ],
+	["Perl",         "perl"       ],
+	["Python",       "python"     ],
+	["Python3",      "python3"    ],
 
-	["Ruby",         "ruby"      ],
-	["Rscript",      "Rscript"   ],
-	["R",            "Rscript"   ],
+	["Ruby",         "ruby"       ],
+	["Rscript",      "Rscript"    ],
+	["R",            "Rscript"    ],
 
-	["Scala",        "scala"     ] ]
-
-
+	["Scala",        "scala"      ] ]
 
 
 

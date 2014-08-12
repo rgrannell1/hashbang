@@ -1,0 +1,4 @@
+<snippet><description>Shebang: Ocaml</description>
+<content><![CDATA[#!/usr/bin/env ocamlscript ${1}]]></content>
+<tabTrigger>#!</tabTrigger>
+</snippet>

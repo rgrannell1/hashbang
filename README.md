@@ -1,5 +1,5 @@
 
-HashBang v0.2.1
+HashBang v0.3.1
 ---------------------------------------
 
 HashBang adds hashbang snippets to SublimeText 2/3.
@@ -14,6 +14,7 @@ HashBang adds hashbang snippets to SublimeText 2/3.
 * Haskell
 * Lua
 * Node
+* Ocaml
 * Perl
 * Python
 * Python3
